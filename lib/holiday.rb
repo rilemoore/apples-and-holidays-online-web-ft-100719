@@ -30,7 +30,8 @@ def add_supply_to_winter_holidays(holiday_hash, supply)
   puts "hello"
   holiday_hash.each do |season, season_hash|
     puts "in first each loop"
-    if season == "winter"
+    if (season == "winter")
+      puts "Its Winter!"
       season_hash.each do |holiday, supplies|
         holiday[supplies].length = supply
         puts "in second each loop"
