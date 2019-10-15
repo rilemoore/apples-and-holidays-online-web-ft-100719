@@ -33,7 +33,7 @@ def add_supply_to_winter_holidays(holiday_hash, supply)
     if (season == :winter)
       puts "Its Winter!"
       season_hash.each do |holiday, supplies|
-        supplies.insert()
+        supplies.insert(-1, supply)
       end
     end
       
