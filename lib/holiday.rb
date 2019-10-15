@@ -94,6 +94,10 @@ def all_supplies_in_holidays(holiday_hash)
     holiday_hash.each do |season, season_hash|
       puts "#{season.to_s.capitalize!}:"
       season_hash.each do |holiday, supplies|
+        if(holiday == "new_years")
+          holiday = "New Years"  
+        end
+        
         puts "  #{holiday.to_s.capitalize!}: #{supplies.join(", ")}"
       end
     end
