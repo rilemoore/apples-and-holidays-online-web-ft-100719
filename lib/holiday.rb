@@ -29,6 +29,7 @@ def add_supply_to_winter_holidays(holiday_hash, supply)
   # Christmas AND the New Year's arrays
 
   holiday_hash.each do |season, season_hash|
+    puts "in first each loop"
     if season == "winter"
       season_hash.each do |holiday, supplies|
         holiday[supplies].length = supply
